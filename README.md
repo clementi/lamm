@@ -8,3 +8,5 @@ For example, to start Ammonite with cats, cats-effect and circe, do the followin
 ```sh
 $ lam cats cats-effect circe
 ```
+
+Type `lam -l` or `lam --list` to list available libraries.
