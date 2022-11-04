@@ -344,5 +344,15 @@
     "ns": "io.chrisdavenport",
     "name": "cormorant-refined",
     "version": "0.3.0"
+  }],
+  "scala-stm": [{
+    "ns": "org.scala-stm",
+    "name": "scala-stm",
+    "version": "0.11.0"
+  }],
+  "cats-stm": [{
+    "ns": "io.github.timwspence",
+    "name": "cats-stm",
+    "version": "0.13.2"
   }]
 }
