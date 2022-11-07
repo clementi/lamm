@@ -370,7 +370,7 @@
     "version": "0.11.3"
   }, {
     "ns": "com.pepegar",
-    "name": "hammock-asynchttpclient",
+    "name": "hammock-apache-http",
     "version": "0.11.3"
   }]
 }
