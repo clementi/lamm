@@ -359,5 +359,18 @@
     "ns": "com.lihaoyi",
     "name": "fansi",
     "version": "0.4.0"
+  }],
+  "hammock": [{
+    "ns": "com.pepegar",
+    "name": "hammock-core",
+    "version": "0.11.3"
+  }, {
+    "ns": "com.pepegar",
+    "name": "hammock-circe",
+    "version": "0.11.3"
+  }, {
+    "ns": "com.pepegar",
+    "name": "hammock-asynchttpclient",
+    "version": "0.11.3"
   }]
 }
