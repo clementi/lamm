@@ -4,7 +4,7 @@ import argparse
 import os
 import subprocess
 
-import yaml
+import json
 
 parser = argparse.ArgumentParser(
     description="Start an Ammonite REPL with libraries."
@@ -45,10 +45,10 @@ def build_predef_code(library_string_lines):
 def main():
     libraries_file_path = os.path.join(
         os.path.dirname(__file__),
-        'libraries.yaml'
+        'libraries.json'
     )
     with open(libraries_file_path) as libraries_file:
-        libraries = yaml.safe_load(libraries_file)
+        libraries = json.load(libraries_file)
 
         args = parser.parse_args()
 
