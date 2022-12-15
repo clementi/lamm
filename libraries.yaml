@@ -1,0 +1,295 @@
+cats:
+- ns: org.typelevel
+  name: cats-core
+  version: 2.8.0
+cats-effect:
+- ns: org.typelevel
+  name: cats-effect
+  version: 3.3.12
+cats-collections:
+- ns: org.typelevel
+  name: cats-collections-core
+  version: 0.9.3
+monocle:
+- ns: dev.optics
+  name: monocle-core
+  version: 3.0.0
+- ns: dev.optics
+  name: monocle-macro
+  version: 3.0.0
+circe:
+- ns: io.circe
+  name: circe-core
+  version: 0.14.1
+- ns: io.circe
+  name: circe-generic
+  version: 0.14.1
+- ns: io.circe
+  name: circe-parser
+  version: 0.14.1
+- ns: io.circe
+  name: circe-optics
+  version: 0.14.1
+doobie:
+- ns: org.tpolecat
+  name: doobie-core
+  version: 0.9.0
+doobie-hikari:
+- ns: org.tpolecat
+  name: doobie-hikari
+  version: 0.9.0
+doobie-postgres:
+- ns: org.tpolecat
+  name: doobie-postgres
+  version: 0.9.0
+cats-retry:
+- ns: com.github.cb372
+  name: cats-retry
+  version: 2.0.0
+monix:
+- ns: io.monix
+  name: monix
+  version: 3.3.0
+akka:
+- ns: com.typesafe.akka
+  name: akka-actor-typed
+  version: 2.6.10
+akka-stream:
+- ns: com.typesafe.akka
+  name: akka-stream
+  version: 2.6.10
+akka-stream-typed:
+- ns: com.typesafe.akka
+  name: akka-stream-typed
+  version: 2.6.10
+akka-stream-kafka:
+- ns: com.typesafe.akka
+  name: akka-stream-kafka
+  version: 2.0.5
+akka-http:
+- ns: com.typesafe.akka
+  name: akka-http
+  version: 10.2.1
+- ns: com.typesafe.akka
+  name: akka-http-spray-json
+  version: 10.2.1
+- ns: com.typesafe.akka
+  name: akka-stream
+  version: 2.6.10
+sttp:
+- ns: com.softwaremill.sttp.client3
+  name: core
+  version: 3.0.0-RC10
+play-json:
+- ns: com.typesafe.play
+  name: play-json
+  version: 2.9.1
+shapeless:
+- ns: com.chuusai
+  name: shapeless
+  version: 2.3.3
+argonaut:
+- ns: io.argonaut
+  name: argonaut
+  version: 6.3.1
+diode:
+- ns: io.suzaku
+  name: diode
+  version: 1.1.8
+refined:
+- ns: eu.timpeit
+  name: refined
+  version: 0.9.18
+refined-cats:
+- ns: eu.timepit
+  name: refined-cats
+  version: 0.9.18
+refined-jsonpath:
+- ns: eu.timepit
+  name: refined-jsonpath
+  version: 0.9.18
+refined-scalacheck:
+- ns: eu.timepit
+  name: refined-scalacheck
+  version: 0.9.18
+scalacheck:
+- ns: org.scalacheck
+  name: scalacheck
+  version: 1.14.1
+zio:
+- ns: dev.zio
+  name: zio
+  version: 1.0.3
+zio-streams:
+- ns: dev.zio
+  name: zio-streams
+  version: 1.0.3
+play-json-derived-codecs:
+- ns: org.julienrf
+  name: play-json-derived-codecs
+  version: 7.0.0
+scalaj-http:
+- ns: org.scalaj
+  name: scalaj-http
+  version: 2.4.2
+quill:
+- ns: io.getquill
+  name: quill-core
+  version: 3.6.0-RC3
+ammonite-ops:
+- ns: com.lihaoyi
+  name: ammonite-ops
+  version: 2.3.8
+http4s:
+- ns: org.http4s
+  name: http4s-core
+  version: '0.23'
+rho:
+- ns: org.http4s
+  name: rho-swagger
+  version: 0.21.0
+scala-logging:
+- ns: com.typesafe.scala-logging
+  name: scala-logging
+  version: 3.9.2
+metascraper:
+- ns: com.beachape.metascraper
+  name: metascraper
+  version: 0.4.0
+enumeratum:
+- ns: com.beachape
+  name: enumeratum
+  version: 1.7.0
+fs2:
+- ns: co.fs2
+  name: fs2-core
+  version: 2.5.0
+- ns: co.fs2
+  name: fs2-io
+  version: 2.5.0
+- ns: co.fs2
+  name: fs2-reactive-streams
+  version: 2.5.0
+circe-fs2:
+- ns: io.circe
+  name: circe-fs2
+  version: 0.14.0
+cancellable-task:
+- ns: com.nthportal
+  name: cancellable-task
+  version: 1.0.0
+parser-combinators:
+- ns: org.scala-lang.modules
+  name: scala-parser-combinators
+  version: 1.1.2
+xml:
+- ns: org.scala-lang.modules
+  name: scala-xml
+  version: 2.0.1
+scopt:
+- ns: com.github.scopt
+  name: scopt
+  version: 4.0.0
+fastparse:
+- ns: com.lihaoyi
+  name: fastparse
+  version: 2.3.0
+decline:
+- ns: com.monovore
+  name: decline
+  version: 1.3.0
+atto:
+- ns: org.tpolecat
+  name: atto-core
+  version: 0.9.0
+- ns: org.tpolecat
+  name: atto-refined
+  version: 0.9.0
+os-lib:
+- ns: com.lihaoyi
+  name: os-lib
+  version: 0.7.0
+caliban:
+- ns: com.github.ghostdogpr
+  name: caliban
+  version: 0.9.4
+scaffeine:
+- ns: com.github.blemale
+  name: scaffeine
+  version: 4.0.2
+fs2-blobstore:
+- ns: com.lendup.fs2-blobstore
+  name: core
+  version: 0.6.+
+- ns: com.lendup.fs2-blobstore
+  name: s3
+  version: 0.6.+
+tapir:
+- ns: com.softwaremill.sttp.tapir
+  name: tapir-core
+  version: 0.17.19
+upickle:
+- ns: com.lihaoyi
+  name: upickle
+  version: 1.3.8
+kantan:
+- ns: com.nrinaudo
+  name: kantan.csv
+  version: 0.6.2
+- ns: com.nrinaudo
+  name: kantan.csv-java8
+  version: 0.6.2
+- ns: com.nrinaudo
+  name: kantan.csv-cats
+  version: 0.6.2
+- ns: com.nrinaudo
+  name: kantan.csv-generic
+  version: 0.6.2
+- ns: com.nrinaudo
+  name: kantan.csv-libra
+  version: 0.6.2
+cats-time:
+- ns: org.typelevel
+  name: cats-time
+  version: 0.5.0
+cormorant:
+- ns: io.chrisdavenport
+  name: cormorant-core
+  version: 0.3.0
+- ns: io.chrisdavenport
+  name: cormorant-generic
+  version: 0.3.0
+- ns: io.chrisdavenport
+  name: cormorant-parser
+  version: 0.3.0
+- ns: io.chrisdavenport
+  name: cormorant-fs2
+  version: 0.3.0
+- ns: io.chrisdavenport
+  name: cormorant-http4s
+  version: 0.3.0
+- ns: io.chrisdavenport
+  name: cormorant-refined
+  version: 0.3.0
+scala-stm:
+- ns: org.scala-stm
+  name: scala-stm
+  version: 0.11.0
+cats-stm:
+- ns: io.github.timwspence
+  name: cats-stm
+  version: 0.13.2
+fansi:
+- ns: com.lihaoyi
+  name: fansi
+  version: 0.4.0
+hammock:
+- ns: com.pepegar
+  name: hammock-core
+  version: 0.11.3
+- ns: com.pepegar
+  name: hammock-circe
+  version: 0.11.3
+- ns: com.pepegar
+  name: hammock-apache-http
+  version: 0.11.3
