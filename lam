@@ -22,7 +22,14 @@ parser.add_argument(
     action='store_true',
     help='list available libraries'
 )
-
+parser.add_argument(
+    '-s',
+    '--scala',
+    type=str,
+    help='version of Scala to load in the REPL',
+    nargs='?',
+    default='2.13.10'
+ )
 
 def build_library_string_lines(libraries, lib):
     def build_string(library):
@@ -66,7 +73,7 @@ def main():
                 for library_line in library_lines:
                     print(f"+ {library_line}")
 
-            subprocess.run(['amm', '--predef-code', predef_code])
+            subprocess.run(['cs', 'launch', 'ammonite', '--scala', args.scala, '--', '--predef-code', predef_code])
 
 
 if __name__ == "__main__":
