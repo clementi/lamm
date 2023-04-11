@@ -372,5 +372,10 @@
     "ns": "com.pepegar",
     "name": "hammock-apache-http",
     "version": "0.11.3"
+  }],
+  "scala-async": [{
+    "ns": "org.scala-lang.modules",
+    "name": "scala-async",
+    "version": "1.0.1"
   }]
 }
