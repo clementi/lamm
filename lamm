@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+import subprocess
+
+import json
+
+parser = argparse.ArgumentParser(
+    description="Start an Ammonite REPL with libraries."
+)
+parser.add_argument(
+    'libraries',
+    metavar='libraries',
+    type=str,
+    nargs='*',
+    help='libraries to add'
+)
+parser.add_argument(
+    '-l',
+    '--list',
+    action='store_true',
+    help='list available libraries'
+)
+parser.add_argument(
+    '-s',
+    '--scala',
+    type=str,
+    help='version of Scala to load in the REPL',
+    nargs='?',
+    default='2'
+ )
+
+def build_library_string_lines(libraries, lib):
+    def build_string(library):
+        return f"{library['ns']}::{library['name']}:{library['version']}"
+
+    libs = libraries[lib]
+    return map(build_string, libs)
+
+
+def build_library_strings(libraries, libs):
+    lines = map(lambda lib: build_library_string_lines(libraries, lib), libs)
+    return [item for sublist in lines for item in sublist]
+
+
+def build_predef_code(library_string_lines):
+    imports = map(lambda line: f"import $ivy.`{line}`", library_string_lines)
+    return ";".join(imports)
+
+
+def main():
+    libraries_file_path = os.path.join(
+        os.path.dirname(__file__),
+        'libraries.json'
+    )
+    with open(libraries_file_path) as libraries_file:
+        libraries = json.load(libraries_file)
+
+        args = parser.parse_args()
+
+        if args.list:
+            print("Available libraries:\n")
+            for item in sorted(libraries):
+                libs = list(map(lambda lib: f"{lib["name"]} v{lib["version"]}", libraries[item]))
+                print(item)
+                print(f"  {libs}")
+        else:
+            library_lines = list(build_library_strings(libraries, args.libraries))
+
+            predef_code = build_predef_code(library_lines)
+
+            if len(library_lines):
+                print("Starting Ammonite with:")
+                for library_line in library_lines:
+                    print(f"+ {library_line}")
+
+            subprocess.run(['cs', 'launch', 'ammonite', '--scala', args.scala, '--', '--predef-code', predef_code])
+
+
+if __name__ == "__main__":
+    main()
