@@ -33,7 +33,7 @@ parser.add_argument(
 )
 
 def build_library_strings(libraries, libs):
-    return functools.reduce(lambda left, right: left + right, [libraries[k] for k in libraries if k in libs])
+    return functools.reduce(lambda left, right: left + right, [libraries[k] for k in libraries if k in libs], [])
 
 
 def build_predef_code(library_string_lines):
