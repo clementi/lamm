@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import functools
 import os
 import subprocess
 
@@ -29,19 +30,10 @@ parser.add_argument(
     help='version of Scala to load in the REPL',
     nargs='?',
     default='2'
- )
-
-def build_library_string_lines(libraries, lib):
-    def build_string(library):
-        return f"{library['ns']}::{library['name']}:{library['version']}"
-
-    libs = libraries[lib]
-    return map(build_string, libs)
-
+)
 
 def build_library_strings(libraries, libs):
-    lines = map(lambda lib: build_library_string_lines(libraries, lib), libs)
-    return [item for sublist in lines for item in sublist]
+    return functools.reduce(lambda left, right: left + right, [libraries[k] for k in libraries if k in libs])
 
 
 def build_predef_code(library_string_lines):
@@ -62,9 +54,10 @@ def main():
         if args.list:
             print("Available libraries:\n")
             for item in sorted(libraries):
-                libs = list(map(lambda lib: f"{lib["name"]} v{lib["version"]}", libraries[item]))
-                print(item)
-                print(f"  {libs}")
+                print(f"{item}:")
+                for library in libraries[item]:
+                    print(f" └─{library}")
+                print()
         else:
             library_lines = list(build_library_strings(libraries, args.libraries))
 

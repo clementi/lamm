@@ -1,386 +1,212 @@
 {
-  "cats": [{
-    "ns": "org.typelevel",
-    "name": "cats-core",
-    "version": "2.8.0"
-  }],
-  "cats-effect": [{
-    "ns": "org.typelevel",
-    "name": "cats-effect",
-    "version": "3.3.12"
-  }],
-  "cats-collections": [{
-    "ns": "org.typelevel",
-    "name": "cats-collections-core",
-    "version": "0.9.3"
-  }],
-  "monocle": [{
-    "ns": "dev.optics",
-    "name": "monocle-core",
-    "version": "3.0.0"
-  }, {
-    "ns": "dev.optics",
-    "name": "monocle-macro",
-    "version": "3.0.0"
-  }],
-  "circe": [{
-    "ns": "io.circe",
-    "name": "circe-core",
-    "version": "0.14.1"
-  }, {
-    "ns": "io.circe",
-    "name": "circe-generic",
-    "version": "0.14.1"
-  }, {
-    "ns": "io.circe",
-    "name": "circe-parser",
-    "version": "0.14.1"
-  }, {
-    "ns": "io.circe",
-    "name": "circe-optics",
-    "version": "0.14.1"
-  }],
-  "doobie": [{
-    "ns": "org.tpolecat",
-    "name": "doobie-core",
-    "version": "0.9.0"
-  }],
-  "doobie-hikari": [{
-    "ns": "org.tpolecat",
-    "name": "doobie-hikari",
-    "version": "0.9.0"
-  }],
-  "doobie-postgres": [{
-    "ns": "org.tpolecat",
-    "name": "doobie-postgres",
-    "version": "0.9.0"
-  }],
-  "fetch": [{
-    "ns": "com.47deg",
-    "name": "fetch",
-    "version": "1.2.2"
-  }],
-  "cats-retry": [{
-    "ns": "com.github.cb372",
-    "name": "cats-retry",
-    "version": "2.0.0"
-  }],
-  "monix": [{
-    "ns": "io.monix",
-    "name": "monix",
-    "version": "3.3.0"
-  }],
-  "akka": [{
-    "ns": "com.typesafe.akka",
-    "name": "akka-actor-typed",
-    "version": "2.6.10"
-  }],
-  "akka-stream": [{
-    "ns": "com.typesafe.akka",
-    "name": "akka-stream",
-    "version": "2.6.10"
-  }],
-  "akka-stream-typed": [{
-    "ns": "com.typesafe.akka",
-    "name": "akka-stream-typed",
-    "version": "2.6.10"
-  }],
-  "akka-stream-kafka": [{
-    "ns": "com.typesafe.akka",
-    "name": "akka-stream-kafka",
-    "version": "2.0.5"
-  }],
-  "akka-http": [{
-    "ns": "com.typesafe.akka",
-    "name": "akka-http",
-    "version": "10.2.1"
-  }, {
-    "ns": "com.typesafe.akka",
-    "name": "akka-http-spray-json",
-    "version": "10.2.1"
-  }, {
-    "ns": "com.typesafe.akka",
-    "name": "akka-stream",
-    "version": "2.6.10"
-  }],
-  "sttp": [{
-    "ns": "com.softwaremill.sttp.client3",
-    "name": "core",
-    "version": "3.0.0-RC10"
-  }],
-  "play-json": [{
-    "ns": "com.typesafe.play",
-    "name": "play-json",
-    "version": "2.9.1"
-  }],
-  "shapeless": [{
-    "ns": "com.chuusai",
-    "name": "shapeless",
-    "version": "2.3.3"
-  }],
-  "argonaut": [{
-    "ns": "io.argonaut",
-    "name": "argonaut",
-    "version": "6.3.1"
-  }],
-  "diode": [{
-    "ns": "io.suzaku",
-    "name": "diode",
-    "version": "1.1.8"
-  }],
-  "refined": [{
-    "ns": "eu.timpeit",
-    "name": "refined",
-    "version": "0.9.18"
-  }],
-  "refined-cats": [{
-    "ns": "eu.timepit",
-    "name": "refined-cats",
-    "version": "0.9.18"
-  }],
-  "refined-jsonpath": [{
-    "ns": "eu.timepit",
-    "name": "refined-jsonpath",
-    "version": "0.9.18"
-  }],
-  "refined-scalacheck": [{
-    "ns": "eu.timepit",
-    "name": "refined-scalacheck",
-    "version": "0.9.18"
-  }],
-  "scalacheck": [{
-    "ns": "org.scalacheck",
-    "name": "scalacheck",
-    "version": "1.14.1"
-  }],
-  "zio": [{
-    "ns": "dev.zio",
-    "name": "zio",
-    "version": "1.0.3"
-  }],
-  "zio-streams": [{
-    "ns": "dev.zio",
-    "name": "zio-streams",
-    "version": "1.0.3"
-  }],
-  "play-json-derived-codecs": [{
-    "ns": "org.julienrf",
-    "name": "play-json-derived-codecs",
-    "version": "7.0.0"
-  }],
-  "scalaj-http": [{
-    "ns": "org.scalaj",
-    "name": "scalaj-http",
-    "version": "2.4.2"
-  }],
-  "quill": [{
-    "ns": "io.getquill",
-    "name": "quill-core",
-    "version": "3.6.0-RC3"
-  }],
-  "ammonite-ops": [{
-    "ns": "com.lihaoyi",
-    "name": "ammonite-ops",
-    "version": "2.3.8"
-  }],
-  "http4s": [{
-    "ns": "org.http4s",
-    "name": "http4s-core",
-    "version": "0.23"
-  }],
-  "rho": [{
-    "ns": "org.http4s",
-    "name": "rho-swagger",
-    "version": "0.21.0"
-  }],
-  "scala-logging": [{
-    "ns": "com.typesafe.scala-logging",
-    "name": "scala-logging",
-    "version": "3.9.2"
-  }],
-  "metascraper": [{
-    "ns": "com.beachape.metascraper",
-    "name": "metascraper",
-    "version": "0.4.0"
-  }],
-  "enumeratum": [{
-    "ns": "com.beachape",
-    "name": "enumeratum",
-    "version": "1.7.0"
-  }],
-  "fs2": [{
-    "ns": "co.fs2",
-    "name": "fs2-core",
-    "version": "2.5.0"
-  }, {
-    "ns": "co.fs2",
-    "name": "fs2-io",
-    "version": "2.5.0"
-  }, {
-    "ns": "co.fs2",
-    "name": "fs2-reactive-streams",
-    "version": "2.5.0"
-  }],
-  "circe-fs2": [{
-    "ns": "io.circe",
-    "name": "circe-fs2",
-    "version": "0.14.0"
-  }],
-  "cancellable-task": [{
-    "ns": "com.nthportal",
-    "name": "cancellable-task",
-    "version": "1.0.0"
-  }],
-  "parser-combinators": [{
-    "ns": "org.scala-lang.modules",
-    "name": "scala-parser-combinators",
-    "version": "1.1.2"
-  }],
-  "xml": [{
-    "ns": "org.scala-lang.modules",
-    "name": "scala-xml",
-    "version": "2.0.1"
-  }],
-  "scopt": [{
-    "ns": "com.github.scopt",
-    "name": "scopt",
-    "version": "4.0.0"
-  }],
-  "fastparse": [{
-    "ns": "com.lihaoyi",
-    "name": "fastparse",
-    "version": "2.3.0"
-  }],
-  "decline": [{
-    "ns": "com.monovore",
-    "name": "decline",
-    "version": "1.3.0"
-  }],
-  "atto": [{
-    "ns": "org.tpolecat",
-    "name": "atto-core",
-    "version": "0.9.0"
-  }, {
-    "ns": "org.tpolecat",
-    "name": "atto-refined",
-    "version": "0.9.0"
-  }],
-  "os-lib": [{
-    "ns": "com.lihaoyi",
-    "name": "os-lib",
-    "version": "0.7.0"
-  }],
-  "caliban": [{
-    "ns": "com.github.ghostdogpr",
-    "name": "caliban",
-    "version": "0.9.4"
-  }],
-  "scaffeine": [{
-    "ns": "com.github.blemale",
-    "name": "scaffeine",
-    "version": "4.0.2"
-  }],
-  "fs2-blobstore": [{
-    "ns": "com.lendup.fs2-blobstore",
-    "name": "core",
-    "version": "0.6.+"
-  }, {
-    "ns": "com.lendup.fs2-blobstore",
-    "name": "s3",
-    "version": "0.6.+"
-  }],
-  "tapir": [{
-    "ns": "com.softwaremill.sttp.tapir",
-    "name": "tapir-core",
-    "version": "0.17.19"
-  }],
-  "upickle": [{
-    "ns": "com.lihaoyi",
-    "name": "upickle",
-    "version": "1.3.8"
-  }],
-  "kantan": [{
-    "ns": "com.nrinaudo",
-    "name": "kantan.csv",
-    "version": "0.6.2"
-  }, {
-    "ns": "com.nrinaudo",
-    "name": "kantan.csv-java8",
-    "version": "0.6.2"
-  }, {
-    "ns": "com.nrinaudo",
-    "name": "kantan.csv-cats",
-    "version": "0.6.2"
-  }, {
-    "ns": "com.nrinaudo",
-    "name": "kantan.csv-generic",
-    "version": "0.6.2"
-  }, {
-    "ns": "com.nrinaudo",
-    "name": "kantan.csv-libra",
-    "version": "0.6.2"
-  }],
-  "cats-time": [{
-    "ns": "org.typelevel",
-    "name": "cats-time",
-    "version": "0.5.0"
-  }],
-  "cormorant": [{
-    "ns": "io.chrisdavenport",
-    "name": "cormorant-core",
-    "version": "0.3.0"
-  }, {
-    "ns": "io.chrisdavenport",
-    "name": "cormorant-generic",
-    "version": "0.3.0"
-  }, {
-    "ns": "io.chrisdavenport",
-    "name": "cormorant-parser",
-    "version": "0.3.0"
-  }, {
-    "ns": "io.chrisdavenport",
-    "name": "cormorant-fs2",
-    "version": "0.3.0"
-  }, {
-    "ns": "io.chrisdavenport",
-    "name": "cormorant-http4s",
-    "version": "0.3.0"
-  }, {
-    "ns": "io.chrisdavenport",
-    "name": "cormorant-refined",
-    "version": "0.3.0"
-  }],
-  "scala-stm": [{
-    "ns": "org.scala-stm",
-    "name": "scala-stm",
-    "version": "0.11.0"
-  }],
-  "cats-stm": [{
-    "ns": "io.github.timwspence",
-    "name": "cats-stm",
-    "version": "0.13.2"
-  }],
-  "fansi": [{
-    "ns": "com.lihaoyi",
-    "name": "fansi",
-    "version": "0.4.0"
-  }],
-  "hammock": [{
-    "ns": "com.pepegar",
-    "name": "hammock-core",
-    "version": "0.11.3"
-  }, {
-    "ns": "com.pepegar",
-    "name": "hammock-circe",
-    "version": "0.11.3"
-  }, {
-    "ns": "com.pepegar",
-    "name": "hammock-apache-http",
-    "version": "0.11.3"
-  }],
-  "scala-async": [{
-    "ns": "org.scala-lang.modules",
-    "name": "scala-async",
-    "version": "1.0.1"
-  }]
+  "cats": [
+    "org.typelevel::cats-core:2.8.0"
+  ],
+  "cats-effect": [
+    "org.typelevel::cats-effect:3.3.12"
+  ],
+  "cats-collections": [
+    "org.typelevel::cats-collections-core:0.9.3"
+  ],
+  "monocle": [
+    "dev.optics::monocle-core:3.0.0",
+    "dev.optics::monocle-macro:3.0.0"
+  ],
+  "circe": [
+    "io.circe::circe-core:0.14.1",
+    "io.circe::circe-generic:0.14.1",
+    "io.circe::circe-parser:0.14.1",
+    "io.circe::circe-optics:0.14.1"
+  ],
+  "doobie": [
+    "org.tpolecat::doobie-core:0.9.0"
+  ],
+  "doobie-hikari": [
+    "org.tpolecat::doobie-hikari:0.9.0"
+  ],
+  "doobie-postgres": [
+    "org.tpolecat::doobie-postgres:0.9.0"
+  ],
+  "fetch": [
+    "com.47deg::fetch:1.2.2"
+  ],
+  "cats-retry": [
+    "com.github.cb372::cats-retry:2.0.0"
+  ],
+  "monix": [
+    "io.monix::monix:3.3.0"
+  ],
+  "akka": [
+    "com.typesafe.akka::akka-actor-typed:2.6.10"
+  ],
+  "akka-stream": [
+    "com.typesafe.akka::akka-stream:2.6.10"
+  ],
+  "akka-stream-typed": [
+    "com.typesafe.akka::akka-stream-typed:2.6.10"
+  ],
+  "akka-stream-kafka": [
+    "com.typesafe.akka::akka-stream-kafka:2.0.5"
+  ],
+  "akka-http": [
+    "com.typesafe.akka::akka-http:10.2.1",
+    "com.typesafe.akka::akka-http-spray-json:10.2.1",
+    "com.typesafe.akka::akka-stream:2.6.10"
+  ],
+  "sttp": [
+    "com.softwaremill.sttp.client3::core:3.0.0-RC10"
+  ],
+  "play-json": [
+    "com.typesafe.play::play-json:2.9.1"
+  ],
+  "shapeless": [
+    "com.chuusai::shapeless:2.3.3"
+  ],
+  "argonaut": [
+    "io.argonaut::argonaut:6.3.1"
+  ],
+  "diode": [
+    "io.suzaku::diode:1.1.8"
+  ],
+  "refined": [
+    "eu.timpeit::refined:0.9.18"
+  ],
+  "refined-cats": [
+    "eu.timepit::refined-cats:0.9.18"
+  ],
+  "refined-jsonpath": [
+    "eu.timepit::refined-jsonpath:0.9.18"
+  ],
+  "refined-scalacheck": [
+    "eu.timepit::refined-scalacheck:0.9.18"
+  ],
+  "scalacheck": [
+    "org.scalacheck::scalacheck:1.14.1"
+  ],
+  "zio": [
+    "dev.zio::zio:1.0.3"
+  ],
+  "zio-streams": [
+    "dev.zio::zio-streams:1.0.3"
+  ],
+  "play-json-derived-codecs": [
+    "org.julienrf::play-json-derived-codecs:7.0.0"
+  ],
+  "scalaj-http": [
+    "org.scalaj::scalaj-http:2.4.2"
+  ],
+  "quill": [
+    "io.getquill::quill-core:3.6.0-RC3"
+  ],
+  "ammonite-ops": [
+    "com.lihaoyi::ammonite-ops:2.3.8"
+  ],
+  "http4s": [
+    "org.http4s::http4s-core:0.23"
+  ],
+  "rho": [
+    "org.http4s::rho-swagger:0.21.0"
+  ],
+  "scala-logging": [
+    "com.typesafe.scala-logging::scala-logging:3.9.2"
+  ],
+  "metascraper": [
+    "com.beachape.metascraper::metascraper:0.4.0"
+  ],
+  "enumeratum": [
+    "com.beachape::enumeratum:1.7.0"
+  ],
+  "fs2": [
+    "co.fs2::fs2-core:3.12.0",
+    "co.fs2::fs2-io:3.12.0",
+    "co.fs2::fs2-reactive-streams:3.12.0"
+  ],
+  "circe-fs2": [
+    "io.circe::circe-fs2:0.14.0"
+  ],
+  "cancellable-task": [
+    "com.nthportal::cancellable-task:1.0.0"
+  ],
+  "parser-combinators": [
+    "org.scala-lang.modules::scala-parser-combinators:1.1.2"
+  ],
+  "xml": [
+    "org.scala-lang.modules::scala-xml:2.0.1"
+  ],
+  "scopt": [
+    "com.github.scopt::scopt:4.0.0"
+  ],
+  "fastparse": [
+    "com.lihaoyi::fastparse:2.3.0"
+  ],
+  "decline": [
+    "com.monovore::decline:1.3.0"
+  ],
+  "atto": [
+    "org.tpolecat::atto-core:0.9.0",
+    "org.tpolecat::atto-refined:0.9.0"
+  ],
+  "os-lib": [
+    "com.lihaoyi::os-lib:0.7.0"
+  ],
+  "caliban": [
+    "com.github.ghostdogpr::caliban:0.9.4"
+  ],
+  "scaffeine": [
+    "com.github.blemale::scaffeine:4.0.2"
+  ],
+  "fs2-blobstore": [
+    "com.lendup.fs2-blobstore::core:0.6.+",
+    "com.lendup.fs2-blobstore::s3:0.6.+"
+  ],
+  "tapir": [
+    "com.softwaremill.sttp.tapir::tapir-core:0.17.19"
+  ],
+  "upickle": [
+    "com.lihaoyi::upickle:1.3.8"
+  ],
+  "kantan": [
+    "com.nrinaudo::kantan.csv:0.6.2",
+    "com.nrinaudo::kantan.csv-java8:0.6.2",
+    "com.nrinaudo::kantan.csv-cats:0.6.2",
+    "com.nrinaudo::kantan.csv-generic:0.6.2",
+    "com.nrinaudo::kantan.csv-libra:0.6.2"
+  ],
+  "cats-time": [
+    "org.typelevel::cats-time:0.5.0"
+  ],
+  "cormorant": [
+    "io.chrisdavenport::cormorant-core:0.3.0",
+    "io.chrisdavenport::cormorant-generic:0.3.0",
+    "io.chrisdavenport::cormorant-parser:0.3.0",
+    "io.chrisdavenport::cormorant-fs2:0.3.0",
+    "io.chrisdavenport::cormorant-http4s:0.3.0",
+    "io.chrisdavenport::cormorant-refined:0.3.0"
+  ],
+  "scala-stm": [
+    "org.scala-stm::scala-stm:0.11.0"
+  ],
+  "cats-stm": [
+    "io.github.timwspence::cats-stm:0.13.2"
+  ],
+  "fansi": [
+    "com.lihaoyi::fansi:0.4.0"
+  ],
+  "hammock": [
+    "com.pepegar::hammock-core:0.11.3",
+    "com.pepegar::hammock-circe:0.11.3",
+    "com.pepegar::hammock-apache-http:0.11.3"
+  ],
+  "scala-async": [
+    "org.scala-lang.modules::scala-async:1.0.1"
+  ],
+  "ox": [
+    "com.softwaremill.ox::core:0.6.0"
+  ],
+  "expecty": [
+    "com.eed3si9n.expecty::expecty:0.17.1"
+  ],
+  "yamlesque": [
+    "io.crashbox::yamlesque:0.4.3"
+  ]
 }
