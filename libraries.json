@@ -202,5 +202,8 @@
   ],
   "yamlesque": [
     "io.crashbox::yamlesque:0.4.3"
+  ],
+  "scala-argparse": [
+    "io.crashbox::argparse:0.20.0"
   ]
 }
