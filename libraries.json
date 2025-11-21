@@ -36,22 +36,16 @@
   "monix": [
     "io.monix::monix:3.3.0"
   ],
-  "akka": [
-    "com.typesafe.akka::akka-actor-typed:2.6.10"
+  "pekko": [
+    "org.apache.pekko::pekko-actor-typed:1.3.0"
   ],
-  "akka-stream": [
-    "com.typesafe.akka::akka-stream:2.6.10"
+  "pekko-stream-typed": [
+    "org.apache.pekko::pekko-stream-typed:1.3.0"
   ],
-  "akka-stream-typed": [
-    "com.typesafe.akka::akka-stream-typed:2.6.10"
-  ],
-  "akka-stream-kafka": [
-    "com.typesafe.akka::akka-stream-kafka:2.0.5"
-  ],
-  "akka-http": [
-    "com.typesafe.akka::akka-http:10.2.1",
-    "com.typesafe.akka::akka-http-spray-json:10.2.1",
-    "com.typesafe.akka::akka-stream:2.6.10"
+  "pekko-http": [
+    "org.apache.pekko::pekko-http:1.3.0",
+    "org.apache.pekko::pekko-http-spray-json:1.3.0",
+    "org.apache.pekko::pekko-stream:1.3.0"
   ],
   "sttp": [
     "com.softwaremill.sttp.client3::core:3.0.0-RC10"
