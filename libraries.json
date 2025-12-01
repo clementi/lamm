@@ -205,5 +205,10 @@
   ],
   "scala-argparse": [
     "io.crashbox::argparse:0.20.0"
+  ],
+  "borer": [
+    "io.bullet::borer-core:1.8.0",
+    "io.bullet::borer-derivation:1.8.0",
+    "io.bullet::borer-compat-circe:1.8.0"
   ]
 }
